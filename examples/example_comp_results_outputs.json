@@ -1,0 +1,48 @@
+/* H2H */
+[{
+  "n_Rank":1,
+  "n_RankSort":1,
+  "c_Rank":"1",
+  "c_Participant":"Azroy Izhar Ahmad",
+  "c_NOC":"Malaysia",
+  "c_NOCShort":"MAS",
+  "c_Competition":"Commonwealth Games",
+  "c_Location":"Gold Coast",
+  "c_Country":"Australia",
+  "n_DateLocalSort": 20180430,
+  "n_PersonID": null,
+  "n_Season": 2018,
+  "c_Season": "2018",
+  "c_Event": "Lightweight",
+  "c_Gender": "Men",
+  "c_GenderShort": "M",
+  "n_CompetitionID": "Local",
+  "n_PhaseID": # of a this file,
+  "c_Class": "local"
+}]
+
+/* Time/Judge */
+[{
+  "n_Rank":1,
+  "n_RankSort":1,
+  "c_Rank":"1",
+  "c_ShirtNr":"173",
+  "c_Participant":"Azroy Izhar Ahmad",
+  "c_NOC":"Malaysia",
+  "c_NOCShort":"MAS",
+  "c_Result":"261",
+  "c_ResultSuffix":null,
+  "c_Competition":"Commonwealth Games",
+  "c_Location":"Gold Coast",
+  "c_Country":"Australia",
+  "n_DateLocalSort": 20180430,
+  "n_PersonID": null,
+  "n_Season": 2018,
+  "c_Season": "2018",
+  "c_Event": "Lightweight",
+  "c_Gender": "Men",
+  "c_GenderShort": "M",
+  "n_CompetitionID": "Local",
+  "n_PhaseID": # of a this file,
+  "c_Class": "local"
+}]

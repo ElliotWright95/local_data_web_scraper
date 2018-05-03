@@ -1,0 +1,25 @@
+/* Head-to-Head Sports (Boxing) */
+
+[{
+  "n_PhaseID": # of a comp_result file,
+  "c_Event":"Lightweight",
+  "c_Gender":"Men",
+  "c_GenderShort":"M",
+  "d_DateEnd":"\/Date(1523656800000+0200)\/",
+  "c_Rank1NOC":"Australia",
+  "c_Rank2NOC":"India",
+  "c_Rank3NOC":"Northern Ireland; Wales"
+}]
+
+/* Time/Judge Sport (Weightlifting) */
+
+[{
+  "n_PhaseID": # of a comp_result file,
+  "c_Event":"56kg",
+  "c_Gender":"Men",
+  "c_GenderShort":"M",
+  "d_DateEnd":"\/Date(1522893600000+0200)\/",
+  "c_Rank1NOC":"Malaysia",
+  "c_Rank2NOC":"India",
+  "c_Rank3NOC":"Sri Lanka"
+}]

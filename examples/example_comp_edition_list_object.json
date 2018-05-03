@@ -1,0 +1,15 @@
+{
+  "n_SportID": 117,
+  "c_Sport": "Swimming",
+  "n_CompetitionID": "Local",
+  "n_EditionID": # of a comp_info file,
+  "c_Competition": "British Champs",
+  "c_Edition": 2018,
+  "c_Country": "Scotland",
+  "c_Location": "Glasgow",
+  "n_DateLocalSort": "",
+  "d_DateEnd": "2018-04-14",
+  "c_Class": "",
+  "c_GenderShort": "",
+  "comp_type": "local"
+}
