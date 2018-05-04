@@ -1,9 +1,8 @@
 # Require Dependicies
 require 'curb'
-require 'Nokogiri'
-require 'JSON'
-require 'Pry'
-require 'csv'
+require 'nokogiri'
+require 'json'
+require 'pry'
 require_relative './scraper_helpers.rb'
 
 include ScraperHelpers
@@ -17,6 +16,9 @@ p 'Web Scrapper Start'
 # Fetch Web Page
 @curb.perform
 
+# Turn HTML into a Nokogiri object
+@web_page = Nokogiri::HTML(@curb.body_str)
+
 p 'Fetched Data'
 
 # Set global variables here
@@ -28,9 +30,6 @@ p 'Fetched Data'
 @location = 'Sheffield'
 @dateEnd = '2017-12-07'
 @editionID = ScraperHelpers::build_local_edition_id(@sportID, @competition, @dateEnd)
-
-# Turn HTML into a Nokogiri object
-@web_page = Nokogiri::HTML(@curb.body_str)
 
 p 'Page Parsed & Globals Set'
 
@@ -57,7 +56,9 @@ if original_array == ""
   new_array = [comp_edition_list_object]
 else
   new_array = JSON.parse(original_array)
-  new_array << comp_edition_list_object
+  unless new_array.any? { |obj| obj['n_EditionID'] == comp_edition_list_object[:n_EditionID] }
+    new_array << comp_edition_list_object
+  end
 end
 
 # Write the new local_competition_editions.json file

@@ -1,4 +1,5 @@
 .DS_Store
-/comp_info_data
-/comp_results_data
-/edition_list_object
+comp_info_data/*
+comp_results_data/*
+!comp_info_data/.gitkeep
+!comp_results_data/.gitkeep
