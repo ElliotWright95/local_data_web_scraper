@@ -76,7 +76,7 @@ gender_counter = 1
 @web_page.css('table').map do |tbody|
   tbody.css('tr').each do |tr|
     comp_results_data = []
-    event = tr.css('td')[0].text
+    event = tr.css('td')[0].text.gsub(/\s+/, ' ')
     gender_short = ScraperHelpers::gender_short_by_order(gender_counter)
     gender = ScraperHelpers::gender_by_order(gender_counter)
     phase_id = ScraperHelpers::build_local_phase_id(@sportID, @competition, @dateEnd, event, gender_short)
@@ -87,17 +87,17 @@ gender_counter = 1
       "c_Gender": gender,
       "c_GenderShort": gender_short,
       "d_DateEnd": @dateEnd,
-      "c_Rank1NOC": tr.css('td')[2].text,
-      "c_Rank2NOC": tr.css('td')[4].text
+      "c_Rank1NOC": tr.css('td')[2].text.gsub(/\s+/, ' '),
+      "c_Rank2NOC": tr.css('td')[4].text.gsub(/\s+/, ' ')
     }
 
     comp_results_data << {
       "n_Rank":1,
       "n_RankSort":1,
       "c_Rank":"1",
-      "c_Participant": tr.css('td')[1].text,
+      "c_Participant": tr.css('td')[1].text.gsub(/\s+/, ' '),
       "c_NOC": tr.css('td')[2].text,
-      "c_NOCShort": tr.css('td')[2].text,
+      "c_NOCShort": tr.css('td')[2].text.gsub(/\s+/, ' '),
       "c_Competition": @competition,
       "c_Location": @location,
       "c_Country": @country,
@@ -117,9 +117,9 @@ gender_counter = 1
       "n_Rank":2,
       "n_RankSort":2,
       "c_Rank":"2",
-      "c_Participant": tr.css('td')[3].text,
+      "c_Participant": tr.css('td')[3].text.gsub(/\s+/, ' '),
       "c_NOC": tr.css('td')[4].text,
-      "c_NOCShort": tr.css('td')[4].text,
+      "c_NOCShort": tr.css('td')[4].text.gsub(/\s+/, ' '),
       "c_Competition": @competition,
       "c_Location": @location,
       "c_Country": @country,

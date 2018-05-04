@@ -1,0 +1,30 @@
+[
+  {
+    "n_CompetitionID": "Local",
+    "n_EditionID": "123BC20171207",
+    "n_SportID": 123,
+    "c_Sport": "Boxing",
+    "c_Competition": "British Championships",
+    "c_Edition": "2017",
+    "c_Country": "England",
+    "c_Location": "Sheffield",
+    "d_DateEnd": "2017-12-07",
+    "n_DateLocalSort": "",
+    "c_Class": "",
+    "c_GenderShort": ""
+  },
+  {
+    "n_CompetitionID": "Local",
+    "n_EditionID": "123BC20151126",
+    "n_SportID": 123,
+    "c_Sport": "Boxing",
+    "c_Competition": "British Championships",
+    "c_Edition": "2015",
+    "c_Country": "England",
+    "c_Location": "Sheffield",
+    "d_DateEnd": "2015-11-26",
+    "n_DateLocalSort": "",
+    "c_Class": "",
+    "c_GenderShort": ""
+  }
+]

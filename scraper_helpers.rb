@@ -28,12 +28,12 @@ module ScraperHelpers
   def gender_by_order(num)
     return "Women" if num == 1
     return "Men" if num == 2
-    return "N/A" if num == 3
+    return "X" if num == 3
   end
 
   def gender_short_by_order(num)
     return "W" if num == 1
     return "M" if num == 2
-    return "N/A" if num == 3
+    return "X" if num == 3
   end
 end
