@@ -1,5 +1,5 @@
 # Require Dependicies
-require 'curb'
+require 'open-uri'
 require 'nokogiri'
 require 'json'
 require 'pry'
@@ -9,15 +9,10 @@ include ScraperHelpers
 
 p 'Web Scrapper Start'
 #1####################################################################################
-# Set Curb to fetch Web Page
-@curb = Curl::Easy.new
-# Set Web Page URL
-@curb.url = "http://amateur-boxing.strefa.pl/Nationalchamps/GreatBritain2017_2.html"
-# Fetch Web Page
-@curb.perform
-
+# Set Open Uri to open Web Page
+@page = open("http://amateur-boxing.strefa.pl/Nationalchamps/GreatBritain2017_2.html")
 # Turn HTML into a Nokogiri object
-@web_page = Nokogiri::HTML(@curb.body_str)
+@web_page = Nokogiri::HTML(@page)
 
 p 'Fetched Data'
 

@@ -6,8 +6,6 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'nokogiri'
 
-gem 'curb'
-
 gem 'json'
 
 gem 'pry'
